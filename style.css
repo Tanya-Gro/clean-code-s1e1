@@ -17,14 +17,11 @@ body {
   font-family: fantasy, cursive;
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
-=======
-@media (max-width:768px) {
->>>>>>> 6d1a7bf088dc3ea9bc762a2257298c7533d55c6c
   .header { text-align: center;
   }
 }
+
 .content {
   display: block;
   width: 500px;
@@ -41,28 +38,16 @@ body {
 }
 
 .todo__list, .complited__list {
-<<<<<<< HEAD
-  margin: 0;
-=======
   margin:0;
->>>>>>> 6d1a7bf088dc3ea9bc762a2257298c7533d55c6c
   padding: 0px;
 }
 
 .complited__item, .todo__item {
-<<<<<<< HEAD
   list-style: none;
 }
 
 /* input, button{
   outline: none;
-=======
-  list-style:none;
-}
-
-/* input, button{
-  outline:none;
->>>>>>> 6d1a7bf088dc3ea9bc762a2257298c7533d55c6c
 } */
 
 button {
@@ -164,23 +149,14 @@ ul#completed-tasks label {
 
 /* Edit Task */
 ul li input[type=text] {
-  display: none
+  display: none;
 }
 
 .editMode .item-input {
-<<<<<<< HEAD
   display: inline-block;
-  width: 224px
-}
-
-.editMode .item-label {
-  display: none;
-=======
-  display:inline-block;
-  width:224px
+  width: 224px;
 }
 
 .editMode .item-label {
   display:none;
->>>>>>> 6d1a7bf088dc3ea9bc762a2257298c7533d55c6c
 }
