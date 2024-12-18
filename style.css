@@ -46,7 +46,8 @@ body {
   padding: 0px;
 }
 
-.complited__item, .todo__item {
+.complited__item, 
+.todo__item {
   list-style: none;
 }
 
@@ -107,7 +108,8 @@ input#new-task {
 }
 
 /* Task list */
-.todo__item, .complited__item {
+.todo__item, 
+.complited__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
