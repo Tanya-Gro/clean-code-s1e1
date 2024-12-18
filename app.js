@@ -32,19 +32,26 @@ const createNewTaskElement = function(taskString){
   const deleteButton = document.createElement("button");//delete button
   const deleteButtonImg = document.createElement("img");//delete button image
 
-  label.innerText = taskString;
-  label.className = 'task';
-
   //Each elements, needs appending
+  listItem.className = 'todo__item';
+
+  label.innerText = taskString;
+  label.className = 'todo__label item-label';
+
   checkBox.type = "checkbox";
+  checkBox.className = "todo__checkbox item-checkbox";
+
   editInput.type = "text";
-  editInput.className = "task";
+  editInput.className = "todo__input item-input";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "edit";
+  editButton.className = "button-label edit";
 
-  deleteButton.className = "delete";
+  deleteButton.className = "button-arrow delete";
+
   deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.className = 'button-arrow__image';
+  deleteButtonImg.alt = 'close button';
   deleteButton.appendChild(deleteButtonImg);
 
 
@@ -70,7 +77,6 @@ const addTask = function() {
   bindTaskEvents(listItem, taskCompleted);
 
   taskInput.value = "";
-
 }
 
 //Edit an existing task.
@@ -111,9 +117,7 @@ const deleteTask = function() {
   const ul = listItem.parentNode;
   //Remove the parent list item from the ul.
   ul.removeChild(listItem);
-
 }
-
 
 //Mark task completed
 const taskCompleted = function() {
@@ -123,7 +127,6 @@ const taskCompleted = function() {
   const listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
