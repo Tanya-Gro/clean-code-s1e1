@@ -27,7 +27,8 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.item-input, .item-label {
+.item-input, 
+.item-label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -37,12 +38,14 @@ body {
   display: flex;
 }
 
-.todo__list, .complited__list {
+.todo__list, 
+.complited__list {
   margin:0;
   padding: 0px;
 }
 
-.complited__item, .todo__item {
+.complited__item, 
+.todo__item {
   list-style: none;
 }
 
@@ -103,7 +106,8 @@ input#new-task {
 }
 
 /* Task list */
-.todo__item, .complited__item {
+.todo__item, 
+.complited__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
