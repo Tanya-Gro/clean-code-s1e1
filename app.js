@@ -65,7 +65,6 @@ const createNewTaskElement=function(taskString){
 }
 
 
-
 const addTask = function() {
   console.log("Add Task...");
   //Create a new list item with the text from the #new-task:
@@ -84,7 +83,6 @@ const addTask = function() {
 const editTask = function() {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
-
 
   const listItem = this.parentNode;
 
@@ -119,6 +117,7 @@ const deleteTask = function() {
   ul.removeChild(listItem);
 }
 
+
 //Mark task completed
 const taskCompleted = function() {
   console.log("Complete Task...");
@@ -141,7 +140,6 @@ const taskIncomplete = function() {
 }
 
 
-
 const ajaxRequest = function() {
   console.log("AJAX Request");
 }
@@ -162,7 +160,6 @@ const bindTaskEvents=function(taskListItem, checkBoxEventHandler){
   const editButton = taskListItem.querySelector("button.edit");
   const deleteButton = taskListItem.querySelector("button.delete");
 
-
   //Bind editTask to edit button.
   editButton.onclick = editTask;
   //Bind deleteTask to delete button.
@@ -170,6 +167,7 @@ const bindTaskEvents=function(taskListItem, checkBoxEventHandler){
   //Bind taskCompleted to checkBoxEventHandler.
   checkBox.onchange = checkBoxEventHandler;
 }
+
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
@@ -180,15 +178,11 @@ for (let i = 0; i < incompleteTaskHolder.children.length; i++){
 }
 
 
-
-
 //cycle over completedTasksHolder ul list items
 for (let i = 0; i < completedTasksHolder.children.length; i++){
   //bind events to list items chldren(tasksIncompleted)
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
-
-
 
 
 // Issues with usability don't get seen until they are in front of a human tester.

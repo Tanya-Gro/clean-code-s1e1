@@ -45,7 +45,7 @@
 
 .todo__list, 
 .complited__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
@@ -74,7 +74,7 @@
   color: #333;
   font-weight: 700;
   font-size: 15px;
-  border-bottom:  2px solid #333;
+  border-bottom: 2px solid #333;
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
@@ -161,5 +161,5 @@ li > input[type="text"] {
 }
 
 .edit-mode .item-label {
-  display:none;
+  display: none;
 }
