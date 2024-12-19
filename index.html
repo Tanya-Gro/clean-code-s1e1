@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Todo App</title>
 </head>
-<body>
+<body class="body">
   <header class="header">
     <img class="header__image" src="./eisenhower-matrix.jpg" alt="the eisenhower matrix">
     <a class="header__link" 
@@ -18,7 +18,7 @@
     </a>
   </header>
   <main class="content">
-    <article class="add-item" id="topSectionForAddingElementToList">
+    <article class="add-item">
       <label class="add-item__label item-title" for="new-task">Add Item</label>
       <div class="add-item__wrapper">
         <input class="add-item__task item-input" id="new-task" type="text">
@@ -37,7 +37,7 @@
             <img class="button-arrow__image" src="./remove.svg" alt="close button">
           </button>
         </li>
-        <li class="todo__item editMode">
+        <li class="todo__item edit-mode">
           <input class="todo__checkbox item-checkbox" type="checkbox">
           <label class="todo__label item-label">Go Shopping</label>
           <input class="todo__input item-input" type="text" value="Go Shopping">
