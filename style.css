@@ -21,7 +21,8 @@
 }
 
 @media (max-width: 768px) {
-  .header { text-align: center;
+  .header {
+    text-align: center;
   }
 }
 
@@ -31,7 +32,8 @@
   margin: 0 auto 0;
 }
 
-.item-input, .item-label {
+.item-input, 
+.item-label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
