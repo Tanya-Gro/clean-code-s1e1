@@ -20,7 +20,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .header { text-align: center;
   }
 }
@@ -42,12 +42,12 @@ body {
 }
 
 .todo__list, .complited__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .complited__item, .todo__item {
-  list-style:none;
+  list-style: none;
 }
 
 /* input, button{
@@ -153,7 +153,7 @@ ul#completed-tasks label {
 
 /* Edit Task */
 ul li input[type=text] {
-  display:none
+  display: none
 }
 
 .edit-mode .item-input {
